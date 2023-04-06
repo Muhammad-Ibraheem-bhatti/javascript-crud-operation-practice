@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+main {
+  background-color: rgba(240, 251, 239, 0.6784313725);
+}
+main p {
+  font-size: 0.9rem;
+}
+main button {
+  background: rgba(240, 251, 239, 0.6784313725);
+}
+main button:hover {
+  background: #1d3557;
+  color: white;
+}
+
+#hostImg {
+  height: 250px;
+  background-image: url("./asste/img1.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#twoBtn {
+  padding: 22px 0;
+}
+
+#clear-btn-2:hover {
+  color: white;
+  background: #1d3557;
+}
+
+#clear-btn {
+  font-size: 1px;
+}
+
+header,
+footer {
+  background-color: #1d3557;
+}
+
+input {
+  border: 1px solid rgba(108, 117, 125, 0.3843137255);
+  padding: 0 15px;
+  border-radius: 3px;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 3px #1d3557;
+  -moz-box-shadow: 0 0 3px #1d3557;
+  -webkit-box-shadow: 0 0 3px #1d3557;
+}
+
+input[type=submit]:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#originalString {
+  background: #1d3557;
+  color: white;
+  padding: 13px;
+}
+
+#result-box {
+  text-align: center;
+  min-height: 120px;
+  padding: 8px 5px;
+}/*# sourceMappingURL=style.css.map */

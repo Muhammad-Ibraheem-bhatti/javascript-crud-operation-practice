@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JS Ch 69 - 75</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- SCSS / CSS StyleSheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Website Icon from Flat Icon-->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/5968/5968509.png">
+
+    <!-- Toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+</head>
+
+<body class="text-center d-flex flex-column justify-content-between">
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a id="logo" class="navbar-brand text-light" href="">Assignments</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon navbar-dark"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-light fw-light" aria-current="page"
+                                    href="javascript:void(0)">Chapter 69 -
+                                    75</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+        </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow-1">
+        <div class="container">
+            <h1 class="fs-4 pt-5">Chapter # 69 - 75 | Objects, Properties, Methods, Constructors and Prototypes</h1>
+            <hr>
+            <div class="container text-center">
+                <div class="row">
+
+                    <!-- Button Section -->
+
+                    <div class="col-lg-6 col-sm-12">
+                        <h2 class="fs-5 mt-4">Buttons</h2>
+                        <div id="twoBtn" class="row border border-1 border-secondary border-opacity-75 rounded px-3">
+                            <div class="col-12 my-1">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-danger w-75" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    Show Image
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Hosting Plans</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div id="" class="my-4">
+                                                    <img style="max-height: 200px;"
+                                                        src="./Assests/Screenshot 2023-04-01 180735.png"
+                                                        alt="Hosting Plans">
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 my-1">
+                                <button onclick="showTable()" type="button" class="btn btn-danger btn w-75 fs-6"
+                                    id="print-cities">Show
+                                    Table</button>
+                            </div>
+                            <div class="col-12 my-1">
+                                <button onclick="printUsersConsole()" type="button" class="btn btn-danger btn w-75 fs-6"
+                                    id="print-cities">Print Users
+                                    in Console</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Form Section -->
+
+                    <div class="col-lg-6 col-sm-12">
+                        <h2 class="fs-5 mt-4">Form</h2>
+                        <div class="border border-1 border-secondary border-opacity-75 rounded px-3 py-4">
+                            <form action="" method="post" onsubmit="handleSubmit()" class="row text-center">
+                                <div class="col-lg-6 col-sm-12 mb-3">
+                                    <input type="text" name="" id="firstName" placeholder="First Name"
+                                        class="w-100 bg-transparent py-1 px-2">
+                                </div>
+                                <div class="col-lg-6 col-sm-12 mb-3">
+                                    <input type="text" name="" id="lastName" placeholder="Last Name"
+                                        class="w-100 bg-transparent py-1 px-2">
+                                </div>
+                                <div class="col-lg-6 col-sm-12 mb-3">
+                                    <input type="email" name="" id="email" placeholder="Email"
+                                        class="w-100 bg-transparent py-1 px-2">
+                                </div>
+                                <div class="col-lg-6 col-sm-12 mb-3">
+                                    <input type="date" name="" id="dob" class="w-100 bg-transparent py-1 px-2">
+                                </div>
+                                <div class="col-6 offset-3">
+                                    <input type="submit" value="Add User" class="w-100 bg-success py-1 text-light">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="container">
+                        <h2 class="fs-5 mt-5">Output / Result</h2>
+                        <div id="result-box" class="border border-1 border-secondary border-opacity-75 rounded py-2">
+                        </div>
+                        <button onclick="clearOutput()"
+                            class="my-3 border border-1 border-secondary rounded px-3 py-2 ">Clear
+                            Output</button>
+                        <br><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-light text-center px-5 py-2">
+        <p class="m-0 p-0">Copyright &copy; 2023. All Rights Reserved by <a
+                href="https://facebook.com/shehroz.arshad.376" target="_blank">Muhammad Ibraheem WMA-105952</a></p>
+    </footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+    <!-- External JavaScript File -->
+    <script src="./script.js"></script>
+
+    <!-- Toastify JS File-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+</body>
+
+</html>
